@@ -778,7 +778,8 @@ export default function UserProfilePage() {
                 </div>
 
                 {isOwner && (
-                  <div className="row g-6">
+                  <>
+                    <div className="row g-6">
                     <div className="col-md-6 col-lg-4">
                         <div className="card stat-card h-100">
                           <div className="card-body">
@@ -839,11 +840,11 @@ export default function UserProfilePage() {
                               </div>
                             </div>
                           </div>
-                        </div>
                       </div>
                     </div>
+                  </div>
 
-                      <div className="row mt-6">
+                  <div className="row mt-6">
                         <div className="col-12">
                           <div className="card">
                             <div className="card-header d-flex align-items-center justify-content-between">
@@ -968,6 +969,7 @@ export default function UserProfilePage() {
                         </div>
                       </div>
                     </div>
+                    </div>
                   </div>
                 )}
               </div>
@@ -982,9 +984,8 @@ export default function UserProfilePage() {
             </div>
           </div>
         </div>
-      </div>
 
-      {showSettings && isOwner && (
+        {showSettings && isOwner && (
         <div
           className="modal fade show d-block"
           style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
