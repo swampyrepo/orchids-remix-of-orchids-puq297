@@ -970,7 +970,6 @@ export default function UserProfilePage() {
                       </div>
                     </div>
                     </div>
-                  </div>
                 )}
               </div>
 
@@ -984,6 +983,7 @@ export default function UserProfilePage() {
             </div>
           </div>
         </div>
+      </div>
 
         {showSettings && isOwner && (
         <div
